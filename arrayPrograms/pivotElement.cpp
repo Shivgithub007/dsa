@@ -8,7 +8,7 @@ int pivot(vector <int> arr){
     int m;
     while(s<=e){
         m=s+(e-s)/2;
-        if(arr[s] < arr[e]){
+        if(arr[s] < arr[e]){// this condition agar array sorted hai to
             return arr[e];
         }else{
             if(m+1<=e && arr[m]>arr[m+1]){
